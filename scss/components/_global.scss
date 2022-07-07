@@ -4,12 +4,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     color: #000000;
+    
+    
 }
 
 
 // $mobile: 479.98 + px;
 $tablet: 767.98 + px;
 $pc: 1199.98 + px;
+$seconsBgColor: #DAECFF;
 
 button {
     cursor: pointer;
@@ -31,18 +34,15 @@ ul {
 }
 
 .container {
+    width: 375px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
 
 
-    // @media screen and (min-width: $mobile) {
-    //     width: 450px;
-    // }
-
     @media screen and (min-width: $tablet) {
         width: 768px;
-        background-color: #fff;
+     
     }
 
     @media screen and (min-width: $pc) {
@@ -71,5 +71,4 @@ ul {
             background-color: #67AEFC;
         }
 }
-
 
