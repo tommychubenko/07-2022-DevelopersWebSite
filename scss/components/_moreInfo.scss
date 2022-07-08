@@ -1,0 +1,41 @@
+.moreinfo {
+ 
+    background-color: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    position: relative;
+
+    &_buble{
+        position: absolute;
+        top: -15px;
+        right: 20px;
+    }
+
+    &_title {
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 1.5;
+        text-align: center;
+        color: #111111;
+        margin-bottom: 32.57px;
+    }
+
+    &_image {
+        margin-bottom: 29px;
+    }
+
+    &_text {
+        text-align: left;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.75;
+        word-wrap:break-word;
+        color: #111111;
+        margin-bottom: 20px;
+    }
+    &_button{
+        display: inline;
+        margin-bottom: 50px;
+    }
+}
