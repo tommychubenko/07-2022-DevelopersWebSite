@@ -276,6 +276,10 @@ button {
   background-color: transparent;
 }
 
+button:active {
+  background-color: transparent;
+}
+
 h1,
 h2,
 h3,

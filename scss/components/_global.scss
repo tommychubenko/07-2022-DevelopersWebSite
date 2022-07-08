@@ -21,6 +21,9 @@ button {
     border: 0;
     padding: 0;
     background-color: transparent;
+    &:active{
+        background-color: transparent;
+    }
 }
 
 h1,
