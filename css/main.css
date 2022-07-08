@@ -808,9 +808,76 @@ ul {
 .request_form--btn {
   margin-top: 5px;
   margin-bottom: 42px;
+  width: 335px;
 }
 
 .request_image {
   margin-bottom: 25px;
+}
+
+.footer {
+  background-color: #67AEFC;
+  padding-top: 46px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.footer_info {
+  padding: 0 36px;
+}
+
+.footer_logo {
+  margin-bottom: 26px;
+}
+
+.footer_contacts--list {
+  margin-bottom: 60px;
+}
+
+.footer_contacts--item {
+  margin-bottom: 16px;
+}
+
+.footer_contacts--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer_contacts--link--logo {
+  margin-right: 15px;
+}
+
+.footer_social--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 41px;
+}
+
+.footer_social--item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footer_copyrights {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.footer_copyrights--email {
+  text-align: left;
+  margin-left: 36px;
+  margin-bottom: 23px;
 }
 /*# sourceMappingURL=main.css.map */
