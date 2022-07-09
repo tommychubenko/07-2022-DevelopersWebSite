@@ -20,8 +20,6 @@ let samplesIterationNumber = 1;
 let samplesIterationPosition = 0;
 const samplesCardWidth = 826;
 
-console.dir(ulWithCards.style.transform);
-
 function openInfo(e) {
   e.currentTarget.children[0].classList.toggle("is-hidden");
   e.currentTarget.children[1].classList.toggle("visible");
@@ -110,7 +108,6 @@ function samplesSlideRight() {
     samplesIterationNumber += 1;
     samplesIterationPosition -= samplesCardWidth;
   }
-  console.log(samplesIterationPosition);
 }
 
 function samplesSlideLeft() {
@@ -137,7 +134,6 @@ function samplesSlideLeft() {
     samplesIterationNumber -= 1;
     samplesIterationPosition += samplesCardWidth;
   }
-  console.log(samplesIterationPosition);
 }
 
 function burgerMenuFunctionality() {
@@ -148,12 +144,10 @@ function burgerMenuFunctionality() {
 //------- Steps section controls
 stepsRightBtn.addEventListener("click", () => {
   slideRight();
-  console.log(animationIterationNumber);
 });
 
 stepsLeftBtn.addEventListener("click", () => {
   slideLeft();
-  console.log(animationIterationNumber);
 });
 
 //------- Sample section controls

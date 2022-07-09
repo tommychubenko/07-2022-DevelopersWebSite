@@ -8,7 +8,7 @@
     width: 100%;
     transform: translateY(-150%);
     transition: all 2500ms cubic-bezier(0.075, 0.82, 0.165, 1);
-   
+
     // display: none;
 
     &_list {
@@ -17,17 +17,20 @@
         align-items: center;
         margin-top: 42px;
     }
-    &_item{
+
+    &_item {
         padding-bottom: 2px;
         padding-top: 2px;
-       .mobile-menu_link:hover{
-            border-bottom: 2px #ffffff solid;}
-        
+
+        .mobile-menu_link:hover {
+            border-bottom: 2px #ffffff solid;
+        }
+
         &:not(:last-child) {
-                margin-bottom: 41px;
-            }
+            margin-bottom: 41px;
+        }
     }
-   
+
 
     &_link {
         text-decoration: none;
@@ -44,7 +47,7 @@
     display: block;
     transform: translateY(0);
     transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-    
+
 }
 
 .noScroll {

@@ -3,8 +3,8 @@
     padding-top: 16px;
     padding-bottom: 20px;
 
-   
-      
+
+
 
     &_title {
         font-size: 24px;
@@ -16,103 +16,110 @@
 
 
     &_item {
-       
+
         box-sizing: border-box;
         border-radius: 10px;
         background-color: white;
-                width: 335px;
+        width: 335px;
 
         &:not(:last-child) {
             margin-bottom: 10px;
         }
-        
-   
+
+
     }
 
     &_link {
-       
 
-   
-        &--menuClosed{
+
+
+        &--menuClosed {
             display: flex;
             // justify-content: space-between;
-            align-items:flex-start;        
+            align-items: flex-start;
             padding: 16px 24px;
-            
+
             &--isHidden {
                 display: none;
             }
-        
+
         }
 
-        &--menuClosedDotThumb{
+        &--menuClosedDotThumb {
             display: flex;
             height: 30px;
             width: 30px;
             align-items: center;
             justify-content: center;
         }
-        &--menuClosedDot{
+
+        &--menuClosedDot {
             margin-right: 18px;
             // align-self:stretch;
         }
-        &--menuClosedTitle{
+
+        &--menuClosedTitle {
             font-size: 17px;
             font-weight: 400;
             line-height: 1.75;
         }
-        &--menuClosedArrow{
+
+        &--menuClosedArrow {
             margin-left: auto;
         }
-      
 
-        &--menuOpen{
+
+        &--menuOpen {
             display: none;
-          
+
             padding: 28px 32px;
             // .services_link:hover &{
             //     display: block;
             // }
         }
-    &--menuOpenThumb{
-        display: flex;
+
+        &--menuOpenThumb {
+            display: flex;
             // justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 19px;
-   
-    }
-    &--menuOpenDotThumb {
-        display: flex;
+
+        }
+
+        &--menuOpenDotThumb {
+            display: flex;
             height: 30px;
             width: 30px;
             align-items: center;
             justify-content: center;
-  }
+        }
 
-  &--menuOpenDot {
-      margin-right: 18px;
-    
-  }
-   &--menuOpenTitle {
-       font-size: 17px;
-       font-weight: 800;
-       line-height: 1.75;
-      
-   }
+        &--menuOpenDot {
+            margin-right: 18px;
 
-   &--menuOpenArrow{
-    margin-left: auto;
-   }
+        }
 
-   &--menuOpenText{
-    font-weight: 400;
-   font-size: 17px;
-    line-height: 1.75;
-    border-left: 1px solid #000000;
-    padding-left: 25px;
-   }
+        &--menuOpenTitle {
+            font-size: 17px;
+            font-weight: 800;
+            line-height: 1.75;
 
-}}
+        }
+
+        &--menuOpenArrow {
+            margin-left: auto;
+        }
+
+        &--menuOpenText {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 1.75;
+            border-left: 1px solid #000000;
+            padding-left: 25px;
+        }
+
+    }
+}
 
 .is-hidden {
     display: none;
@@ -122,6 +129,6 @@
     display: block
 }
 
-.absolute{
+.absolute {
     position: absolute
 }

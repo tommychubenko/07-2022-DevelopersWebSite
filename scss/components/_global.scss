@@ -3,8 +3,8 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    color: #000000; 
-       
+    color: #000000;
+
 }
 
 
@@ -19,7 +19,8 @@ button {
     border: 0;
     padding: 0;
     background-color: transparent;
-    &:active{
+
+    &:active {
         background-color: transparent;
     }
 }
@@ -46,7 +47,7 @@ ul {
 
     @media screen and (min-width: $tablet) {
         width: 768px;
-     
+
     }
 
     @media screen and (min-width: $pc) {
@@ -54,7 +55,7 @@ ul {
     }
 }
 
-.button_one{
+.button_one {
     width: 270px;
     height: 60px;
     display: flex;
@@ -68,14 +69,17 @@ ul {
     background-color: #75E169;
     border-radius: 5px;
     cursor: pointer;
-    &:hover, &:focus {
-            outline: 2px solid #67AEFC
-        }
-        &:active {
-            background-color: #67AEFC;
-        }
+
+    &:hover,
+    &:focus {
+        outline: 2px solid #67AEFC
+    }
+
+    &:active {
+        background-color: #67AEFC;
+    }
 }
 
-.noScroll{
- overflow-y: hidden;
+.noScroll {
+    overflow-y: hidden;
 }

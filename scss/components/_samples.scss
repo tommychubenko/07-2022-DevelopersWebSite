@@ -36,7 +36,7 @@
         overflow: hidden;
         margin-bottom: 14.98px;
         position: relative;
-       
+
 
 
         &--overflow {
@@ -52,16 +52,17 @@
             left: 0;
             transform: translateX(100%);
             transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                .samples_link:hover &{
-                    transform: translateX(0);
-                }
-            
+
+            .samples_link:hover & {
+                transform: translateX(0);
+            }
+
         }
 
         &--overflowTitle {
             font-weight: 800;
             font-size: 17px;
-            line-height: 27px;  
+            line-height: 27px;
             text-transform: uppercase;
             color: #FFFFFF;
         }

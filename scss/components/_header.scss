@@ -1,4 +1,4 @@
-.header{
+.header {
     background-color: $bg-color-header-footer;
     height: 49px;
     padding: 0 16px 0 12px;
@@ -6,7 +6,8 @@
     justify-content: space-between;
     align-items: center;
 }
-.logo_mobile{
+
+.logo_mobile {
     width: 136px;
     height: 35px;
 }
@@ -15,13 +16,13 @@
     width: 49px;
     height: 13px;
     background-color: inherit;
-   
-   
+
+
 
 }
 
-.burger_image{
-   display: flex;
-   gap: 5px;
-    
+.burger_image {
+    display: flex;
+    gap: 5px;
+
 }

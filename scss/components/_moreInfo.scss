@@ -1,12 +1,12 @@
 .moreinfo {
- 
+
     background-color: #ffffff;
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
     position: relative;
 
-    &_buble{
+    &_buble {
         position: absolute;
         top: -15px;
         right: 20px;
@@ -30,11 +30,12 @@
         font-weight: 400;
         font-size: 17px;
         line-height: 1.75;
-        word-wrap:break-word;
+        word-wrap: break-word;
         color: #111111;
         margin-bottom: 20px;
     }
-    &_button{
+
+    &_button {
         display: inline;
         margin-bottom: 50px;
     }
