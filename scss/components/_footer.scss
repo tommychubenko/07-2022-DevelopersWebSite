@@ -57,6 +57,10 @@
             text-align: left;
             margin-left: 36px;
             margin-bottom: 23px;
+            &--link{
+                text-decoration: none;
+                color: inherit;
+            }
 
         }
     }
