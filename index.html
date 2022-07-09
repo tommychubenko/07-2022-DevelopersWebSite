@@ -386,7 +386,11 @@
             <img src="./images/moreinfo_buble.svg" class="moreinfo_buble
     ">
             <h2 class="moreinfo_title">Необходимо больше информации?</h2>
-            <img src="./images/moreinfo_main_image.svg" alt="" class="moreinfo_image">
+            <picture>
+                <source srcset="./images/moreinfo_main_image@x1.png 1x, ./images/moreinfo_main_image@x2.png 2x " media="(min-width: 100px)">
+                <img src="./images/sample.jpg" alt="image" class="moreinfo_image">
+            </picture>
+           
             <p class="moreinfo_text">Если Вы владелец онлайн-магазина или только начинаете свой путь в электронной
                 коммерции
                 и вам нужен уникальный дизайн
@@ -407,8 +411,11 @@
                 <input class="request_form--input" placeholder="Email" required type="email">
                 <button type="submit" class="request_form--btn button_one">Отправить</button>
             </form>
-            <img src="./images/request_image.png" alt="" class="request_image">
-        </div>
+            <picture>
+                <source srcset="./images/request_image@x1.png 1x, ./images/request_image@x2.png 2x " media="(min-width: 100px)">
+                <img src="./images/sample.jpg" alt="image" class="request_image">
+            </picture>
+           
     </section>
     <section class="footer">
         <div class="container">
