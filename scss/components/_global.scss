@@ -3,10 +3,8 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    color: #000000;
-    
-    
-    
+    color: #000000; 
+       
 }
 
 
@@ -78,3 +76,6 @@ ul {
         }
 }
 
+.noScroll{
+ overflow-y: hidden;
+}

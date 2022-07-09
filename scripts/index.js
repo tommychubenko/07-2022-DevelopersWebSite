@@ -1,3 +1,8 @@
+const burgerBtn = document.querySelector(".burger");
+const mobileMenu = document.querySelector(".mobile-menu");
+const body = document.querySelector("body");
+const mobileLink = document.querySelectorAll(".mobile-menu_link");
+
 const servicesLink = document.querySelectorAll(".services_link");
 const stepsLeftBtn = document.querySelector(".steps_controls--left");
 const stepsRightBtn = document.querySelector(".steps_controls--right");
@@ -15,6 +20,8 @@ let samplesIterationNumber = 1;
 let samplesIterationPosition = 0;
 const samplesCardWidth = 826;
 
+console.dir(ulWithCards.style.transform);
+
 function openInfo(e) {
   e.currentTarget.children[0].classList.toggle("is-hidden");
   e.currentTarget.children[1].classList.toggle("visible");
@@ -28,65 +35,78 @@ servicesLink.forEach((link) => {
 
 // ----- Steps btns functionality
 function slideRight() {
+  ulWithCards;
+  ulWithCards.classList.add("slide-right");
+
   if (animationIterationNumber < ulWithCards.children.length) {
-    ulWithCards.animate(
-      [
-        // keyframes
-        { transform: `translateX(${iterationPosition - stepsCardWidth}px)` },
-      ],
-      {
-        // timing options
-        duration: 500,
-        iterations: 1,
-        fill: "forwards",
-      }
-    );
+    ulWithCards.style.transform = `translateX(${
+      iterationPosition - stepsCardWidth
+    }px)`;
+    // ulWithCards.animate(
+    //   [
+    //     // keyframes
+    //     { transform: `translateX(${iterationPosition - stepsCardWidth}px)` },
+    //   ],
+    //   {
+    //     // timing options
+    //     duration: 500,
+    //     iterations: 1,
+    //     fill: "forwards",
+    //   }
+    // );
     animationIterationNumber += 1;
     iterationPosition -= stepsCardWidth;
   }
-  console.log(iterationPosition);
 }
 
 function slideLeft() {
+  ulWithCards.classList.add("slide-left");
   if (animationIterationNumber > 1) {
-    ulWithCards.animate(
-      [
-        // keyframes
-        { transform: `translateX(${iterationPosition + stepsCardWidth}px)` },
-      ],
-      {
-        // timing options
-        duration: 500,
-        iterations: 1,
-        fill: "forwards",
-      }
-    );
+    ulWithCards.style.transform = `translateX(${
+      iterationPosition + stepsCardWidth
+    }px)`;
+
+    // ulWithCards.animate(
+    //   [
+    //     // keyframes
+    //     { transform: `translateX(${iterationPosition + stepsCardWidth}px)` },
+    //   ],
+    //   {
+    //     // timing options
+    //     duration: 500,
+    //     iterations: 1,
+    //     fill: "forwards",
+    //   }
+    // );
     animationIterationNumber -= 1;
     iterationPosition += stepsCardWidth;
   }
-  console.log(iterationPosition);
 }
 
 // --------- Samples btns functionality
 
 function samplesSlideRight() {
   if (samplesIterationNumber < 2) {
-    saplesUlCards.animate(
-      [
-        // keyframes
-        {
-          transform: `translateY(${
-            samplesIterationPosition - samplesCardWidth
-          }px)`,
-        },
-      ],
-      {
-        // timing options
-        duration: 500,
-        iterations: 1,
-        fill: "forwards",
-      }
-    );
+    saplesUlCards.style.transform = `translateY(${
+      samplesIterationPosition - samplesCardWidth
+    }px)`;
+
+    // saplesUlCards.animate(
+    //   [
+    //     // keyframes
+    //     {
+    //       transform: `translateY(${
+    //         samplesIterationPosition - samplesCardWidth
+    //       }px)`,
+    //     },
+    //   ],
+    //   {
+    //     // timing options
+    //     duration: 500,
+    //     iterations: 1,
+    //     fill: "forwards",
+    //   }
+    // );
     samplesIterationNumber += 1;
     samplesIterationPosition -= samplesCardWidth;
   }
@@ -95,26 +115,34 @@ function samplesSlideRight() {
 
 function samplesSlideLeft() {
   if (samplesIterationNumber > 1) {
-    saplesUlCards.animate(
-      [
-        // keyframes
-        {
-          transform: `translateY(${
-            samplesIterationPosition + samplesCardWidth
-          }px)`,
-        },
-      ],
-      {
-        // timing options
-        duration: 500,
-        iterations: 1,
-        fill: "forwards",
-      }
-    );
+    saplesUlCards.style.transform = `translateY(${
+      samplesIterationPosition + samplesCardWidth
+    }px)`;
+    // saplesUlCards.animate(
+    //   [
+    //     // keyframes
+    //     {
+    //       transform: `translateY(${
+    //         samplesIterationPosition + samplesCardWidth
+    //       }px)`,
+    //     },
+    //   ],
+    //   {
+    //     // timing options
+    //     duration: 500,
+    //     iterations: 1,
+    //     fill: "forwards",
+    //   }
+    // );
     samplesIterationNumber -= 1;
     samplesIterationPosition += samplesCardWidth;
   }
   console.log(samplesIterationPosition);
+}
+
+function burgerMenuFunctionality() {
+  mobileMenu.classList.toggle("translateY0");
+  body.classList.toggle("noScroll");
 }
 
 //------- Steps section controls
@@ -137,3 +165,9 @@ samplesRightBtn.addEventListener("click", () => {
 samplesLeftBtn.addEventListener("click", () => {
   samplesSlideLeft();
 });
+
+burgerBtn.addEventListener("click", burgerMenuFunctionality);
+mobileLink.forEach((link) => {
+  link.addEventListener("click", burgerMenuFunctionality);
+});
+// mobileLink.addEventListener("click", burgerMenuFunctionality);
