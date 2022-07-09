@@ -2,14 +2,15 @@
     padding-top: 300px;
     padding-bottom: 51px;
     position: relative;
+    &_image {
+            position: absolute;
+            top: 0;
+            left: -20px;
+            pointer-events: none;
+        }
 }
 
-.hero_image{
-    position: absolute;
-    top: 0;
-    left: -20px;
-    pointer-events: none;
-}
+
 
 
 .hero_title{
