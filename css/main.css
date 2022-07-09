@@ -374,13 +374,14 @@ ul {
   width: 49px;
   height: 100%;
   background-color: inherit;
-}
-
-.burger_image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: transparent;
 }
 
 .hero {
