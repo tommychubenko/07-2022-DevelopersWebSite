@@ -5,11 +5,82 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (min-width: $pc) {
+        height: 95px;
+
+    }
+}
+
+.header-container {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+    @media screen and (min-width: $pc) {
+       
+
+    }
+}
+
+.main_menu {
+    display: none;
+
+    @media screen and (min-width: $pc) {
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    &--item {
+        @media screen and (min-width: $pc) {
+            margin-right: 35px;
+        }
+    }
+
+    &--link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    &--btn {
+
+        @media screen and (min-width: $pc) {
+            width: 170px;
+            height: 37.78px;
+            left: 1375px;
+            top: 28.18px;
+            background: #75E169;
+            border-radius: 5px;
+            font-weight: 700;
+                font-size: 15px;
+                line-height: 100%;        
+            display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;            
+                color: #FFFFFF;
+                &:hover{border: 2px solid #FFFFFF;}
+                &:active{
+                    color: #67AEFC;
+                    background-color: #ffffff;
+                }
+        }
+    }
 }
 
 .logo_mobile {
     width: 136px;
     height: 35px;
+
+    @media screen and (min-width: $pc) {
+        width: 242px;
+        height: 59px;
+    }
 }
 
 .burger {
@@ -20,6 +91,10 @@
     gap: 5px;
     align-items: center;
     outline: transparent;
+
+    @media screen and (min-width: $pc) {
+        display: none;
+    }
 
 
 

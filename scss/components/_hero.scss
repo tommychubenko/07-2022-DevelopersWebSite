@@ -1,13 +1,129 @@
 .hero {
-    padding-top: 300px;
+    padding-top: 337px;
     padding-bottom: 51px;
     position: relative;
+    @media screen and (min-width: 480px) {
+            padding-top: 470px;
+        }
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 50px;
+    }
+
+
+    @media screen and (min-width: $pc) {
+        padding-top: 171px;
+    }
 
     &_image {
         position: absolute;
         top: 0;
-        left: -20px;
+        left: 0;
+        width: 100%;
         pointer-events: none;
+       
+
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+
+
+
+        @media screen and (min-width: $pc) {
+            display: none;
+        }
+
+        &--pc-elipce {
+            display: none;
+
+
+            @media screen and (min-width: $pc) {
+                display: block;
+                position: absolute;
+                top: 82px;
+                right: 0;
+            }
+        }
+
+        &--pc-cart {
+            display: none;
+
+            @media screen and (min-width: $tablet) {
+                display: block;
+                position: absolute;
+                width: 300px;
+                top: 20px;
+                right: 50px;
+            }
+
+            @media screen and (min-width: $pc) {
+                top: 82px;
+                // right: 171px;
+                right: -100px;
+                width: unset;
+            }
+
+            @media screen and (min-width: 1600px) {
+                right: 50px;
+            }
+            
+                        @media screen and (min-width: 1920px) {
+                            right: 171px;
+                        }
+
+        }
+
+        &--pc-leftElipce {
+            display: none;
+
+
+
+
+            @media screen and (min-width: $pc) {
+                display: block;
+                position: absolute;
+                bottom: 41px;
+                left: 0;
+            }
+        }
+
+        &--pc-blanket {
+            display: none;
+            height: 63px;
+            width: 171px;
+
+            @media screen and (min-width: $pc) {
+                display: block;
+                position: absolute;
+                bottom: 95px;
+                left: 63px;
+            }
+        }
+
+        &--pc-buble {
+            display: none;
+
+            @media screen and (min-width: $pc) {
+                display: block;
+                position: absolute;
+                top: 50px;
+                left: 239px;
+            }
+                        @media screen and (min-width: 1920px) {
+                            top: 120px;
+                        }
+
+        }
+    }
+
+    & .button_one {
+        margin: 0 auto;
+
+        @media screen and (min-width: $pc) {
+            margin: unset;
+            margin-bottom: 180px;
+        }
     }
 }
 
@@ -20,6 +136,22 @@
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 22px;
+    color: #000000;
+
+    @media screen and (min-width: $tablet) {
+        width: 350px;
+        line-height: 1.25;
+        color: #484848;
+        margin-bottom: 20px;
+
+    }
+
+    @media screen and (min-width: $pc) {
+        width: 550px;
+        font-weight: 900;
+        font-size: 50px;
+
+    }
 }
 
 .hero_text {
@@ -27,8 +159,16 @@
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 34px;
-}
+    color: #000000;
 
-.hero .button_one {
-    margin: 0 auto;
+    @media screen and (min-width: $tablet) {
+        width: 400px;
+        margin-bottom: 58px;
+    }
+
+    @media screen and (min-width: $pc) {
+        width: 450px;
+        margin-bottom: 58px;
+    }
+
 }

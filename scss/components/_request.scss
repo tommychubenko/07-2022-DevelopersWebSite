@@ -4,12 +4,25 @@
     padding-top: 42px;
     padding-bottom: 25px;
     text-align: center;
+    position: relative;
+
+    @media screen and (min-width: $pc) {
+        padding-top: 180px;
+        padding-bottom: 128px;
+    }
 
     &_title {
         font-weight: 800;
         font-size: 23px;
         line-height: 1.5;
         color: #111111;
+
+        @media screen and (min-width: $pc) {
+
+            font-size: 32px;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
     }
 
     &_text {
@@ -18,6 +31,14 @@
         line-height: 1.75;
         color: #111111;
         margin-bottom: 25px;
+
+        @media screen and (min-width: $pc) {
+            display: inline-flex;
+            width: 479px;
+            font-size: 18px;
+            text-align: center;
+
+        }
     }
 
     &_form {
@@ -33,17 +54,72 @@
             background: #FFFFFF;
             border: 1px solid #67AEFC;
             border-radius: 10px;
+            @media screen and (min-width: $tablet) {
+                width: 470px;
+            }
+
+            &:focus {
+                outline: 1px solid #67AEFC;
+
+                &::placeholder {
+                    color: #111111;
+                }
+            }
+
         }
 
         &--btn {
             margin-top: 5px;
             margin-bottom: 42px;
             width: 335px;
+            @media screen and (min-width: $pc) {
+                width: 270px;
+            }
         }
     }
 
+    &_buble{
+        display: none;
+        @media screen and (min-width: $pc) {
+        display: block;
+        height: 66px;
+        width: 66px;
+        position: absolute;
+        top: 362px;
+        right: 200px;}
+                  @media screen and (min-width: 1940px) {
+        
+                    right: 420px;
+                  }
+    }
     &_image {
         margin-bottom: 25px;
+        @media screen and (min-width: $pc) {
+            position: absolute;
+            top: 262px;
+            left: 100px;
+            @media screen and (min-width: 1940px) {
+                
+                left: 232px;
+            }
+
+
+        }
+        &--blanket{
+            display: none;
+            @media screen and (min-width: $pc) {
+                display: block;
+            position: absolute;
+            top: 289px;
+            right: 185px;
+            }
+            
+            @media screen and (min-width: 1940px) {
+            
+                right: 405px;
+            }
+
+        }
     }
 
 }

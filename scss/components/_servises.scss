@@ -2,8 +2,28 @@
     background-color: $secondBgColor;
     padding-top: 16px;
     padding-bottom: 20px;
+    @media screen and (min-width: $tablet) {
+        padding: 50px 0;
+    }
 
+    @media screen and (min-width: $pc) {
+        padding: 120px 0;
+        position: relative;
+    }
 
+&_image--pc--bag{
+    display: none;
+    @media screen and (min-width: $pc) {
+        // display: none;
+        // display: block;
+        position: absolute;
+        bottom:92px;
+        right: 145px;
+    }
+        @media screen and (min-width: 1780px) {
+            display: block;}
+
+}
 
 
     &_title {
@@ -12,6 +32,14 @@
         text-align: center;
         margin-bottom: 17px;
         line-height: 1.5;
+        @media screen and (min-width: $pc) {
+            font-weight: 800;
+                font-size: 32px;
+                line-height: 1.25;         
+            text-align: center;
+            color: #111111;
+            margin-bottom: 73px;       
+        }
     }
 
 
@@ -20,18 +48,21 @@
         box-sizing: border-box;
         border-radius: 10px;
         background-color: white;
-        width: 335px;
+        width: 100%;
+        @media screen and (min-width: $tablet) {
+            
+        }
 
         &:not(:last-child) {
             margin-bottom: 10px;
         }
-
+    @media screen and (min-width: $pc) {
+        width: 1169px;
+    }
 
     }
 
     &_link {
-
-
 
         &--menuClosed {
             display: flex;
@@ -39,9 +70,14 @@
             align-items: flex-start;
             padding: 16px 24px;
 
+            @media screen and (min-width: $pc) {
+                padding: 18px 44px;
+            }
+
             &--isHidden {
                 display: none;
             }
+            
 
         }
 
@@ -56,12 +92,22 @@
         &--menuClosedDot {
             margin-right: 18px;
             // align-self:stretch;
+            @media screen and (min-width: $pc) {margin-right: 28px;}
         }
 
         &--menuClosedTitle {
             font-size: 17px;
             font-weight: 400;
             line-height: 1.75;
+            @media screen and (min-width: $pc) {
+                font-weight: 400;
+                    font-size: 18px;
+                    line-height: 1.75;
+              
+                
+                
+                    color: #111111;
+            }
         }
 
         &--menuClosedArrow {
@@ -73,6 +119,9 @@
             display: none;
 
             padding: 28px 32px;
+            @media screen and (min-width: $pc) {
+                    padding: 18px 44px;
+                }
             // .services_link:hover &{
             //     display: block;
             // }
@@ -103,6 +152,12 @@
             font-size: 17px;
             font-weight: 800;
             line-height: 1.75;
+            @media screen and (min-width: $pc) {
+                font-weight: 700;
+                    font-size: 21px;
+                    line-height: 1.25;   
+                    color: #111111;
+                }
 
         }
 
@@ -116,6 +171,10 @@
             line-height: 1.75;
             border-left: 1px solid #000000;
             padding-left: 25px;
+@media screen and (min-width: $pc) {
+            font-weight: 400;
+                font-size: 18px;
+                line-height: 1.75; color: #000000;}
         }
 
     }

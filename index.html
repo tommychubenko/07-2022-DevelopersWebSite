@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="description" content="Free Web tutorials for HTML and CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,22 +19,61 @@
 <body>
 
 
-    <div class="header"><a href="#" class="header_logo--link"><img loading="lazy" src="./images/logo_mobile.svg"
-                alt="Logo" class="logo_mobile"></a>
-        <button class="burger">
+    <section class="header">
+        <div class="container header-container"><a href="#" class="header_logo--link"><img loading="lazy"
+                    src="./images/logo_mobile.svg" alt="Logo" class="logo_mobile"></a>
 
-            <img loading="lazy" src="./images/dot.svg" alt="Menu button"><img loading="lazy" src="./images/dot.svg"
-                alt="Image"><img loading="lazy" src="./images/dot.svg" alt="Default image">
+            <ul class="main_menu">
+                <li class="main_menu--item"><a href="#services" class="main_menu--link">Услуги</a></li>
+                <li class="main_menu--item"><a href="#portfolio" class="main_menu--link">Портфолио</a></li>
+                <li class="main_menu--item"><a href="#steps" class="main_menu--link">Этапы</a></li>
+                <li class="main_menu--item"><a href="#designers" class="main_menu--link">Дизайнеры</a></li>
+                <li class="main_menu--item"><button class="main_menu--btn">Заказать</button></a></li>
+            </ul>
 
-        </button>
-    </div>
-    <div class="container">
-        <section class="hero">
-            <picture>
-                <source srcset="./images/hero_image@x1.png 1x, ./images/hero_image@x2.png 2x "
-                    media="(min-width: 100px)">
-                <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image">
-            </picture>
+            <button class="burger">
+
+                <img loading="lazy" src="./images/dot.svg" alt="Menu button"><img loading="lazy" src="./images/dot.svg"
+                    alt="Image"><img loading="lazy" src="./images/dot.svg" alt="Default image">
+
+            </button>
+        </div>
+    </section>
+
+
+
+    <section class="hero">
+        <picture>
+            <source srcset="./images/hero_image@x1.png 1x, ./images/hero_image@x2.png 2x " media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_elipse@x1.png 1x, ./images/hero_elipse@x2.png 2x " media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-elipce">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_left_elipse@x1.png 1x, ./images/hero_left_elipse@x2.png 2x "
+                media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-leftElipce">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_cart@x1.png 1x, ./images/hero_cart@x2.png 2x " media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-cart">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_left_blanket@x1.png 1x, ./images/hero_left_blanket@x2.png 2x "
+                media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-blanket">
+        </picture>
+        <picture>
+            <source srcset="./images/hero_buble@x1.png 1x, ./images/hero_buble@x2.png 2x " media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="hero_image--pc-buble">
+        </picture>
+        <div class="container">
+
+
+
+
             <h1 class="hero_title">Разработка
                 интернет-магазина
                 с нуля за неделю</h1>
@@ -42,11 +82,12 @@
                 до пользовательского интерфейса в сжатые сроки с командой Virtual Designers
             </p>
             <button class="button button_one">Заказать</button>
-        </section>
+        </div>
+    </section>
 
 
 
-    </div>
+
     <section class="services" id="services">
         <div class="container">
             <h2 class="services_title">Что входит в услугу по созданию дизайна интернет-магазина?</h2>
@@ -231,17 +272,27 @@
         </div>
 
 
-
-
-
-
-
+        <picture>
+            <source srcset="./images/services_bag@x1.png 1x, ./images/services_bag@x2.png 2x "
+                media="(min-width: 100px)">
+            <img loading="lazy" src="./images/sample.jpg" alt="image" class="services_image--pc--bag">
+        </picture>
 
     </section>
+    
     <section class="steps" id="steps">
         <div class="container">
+            <picture>
+                <source srcset="./images/steps_buble@x1.png 1x, ./images/steps_buble@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_buble">
+            </picture>
+            <picture>
+                <source srcset="./images/steps_blanked@x1.png 1x, ./images/steps_blanked@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="steps_blanked">
+            </picture>
 
-            <img loading="lazy" src="./images/steps_buble.svg" alt="Image" class="steps_buble">
             <h2 class="steps_title">Этапы разработки
                 интернет-магазина</h2>
 
@@ -249,10 +300,12 @@
                 <ul class="steps_list" style="transform: translateX(0);">
                     <li class="steps_item">
                         <div class="steps_card">
-                            <p class="steps_card--title">1. Анализ</p>
-                            <p class="steps_card--text">Для того, чтобы онлайн-магазин приносил выгоду, перед его
-                                запуском необходимо провести анализ других предложений рынка,
-                                оценить конкурентов и найти наиболее удобное решение.</p>
+                            <div>
+                                <p class="steps_card--title">1. Анализ</p>
+                                <p class="steps_card--text">Для того, чтобы онлайн-магазин приносил выгоду, перед его
+                                    запуском необходимо провести анализ других предложений рынка,
+                                    оценить конкурентов и найти наиболее удобное решение.</p>
+                            </div>
                             <picture>
                                 <source srcset="./images/card_image_1@x1.png 1x, ./images/card_image_1@x2.png 2x "
                                     media="(min-width: 100px)">
@@ -263,10 +316,13 @@
                     </li>
                     <li class="steps_item">
                         <div class="steps_card">
-                            <p class="steps_card--title">2. Визуальное решение</p>
-                            <p class="steps_card--text">Разработка дизайна ключевых страниц магазина – главная, каталог,
-                                информационные разделы, раздел корзины, товаров. Для
-                                нас главное – передать настроение бренда, сделать удобный сайт.</p>
+                            <div>
+                                <p class="steps_card--title">2. Визуальное решение</p>
+                                <p class="steps_card--text">Разработка дизайна ключевых страниц магазина – главная,
+                                    каталог,
+                                    информационные разделы, раздел корзины, товаров. Для
+                                    нас главное – передать настроение бренда, сделать удобный сайт.</p>
+                            </div>
                             <picture>
                                 <source srcset="./images/card_image_2@x1.png 1x, ./images/card_image_2@x2.png 2x "
                                     media="(min-width: 100px)">
@@ -276,10 +332,12 @@
                     </li>
                     <li class="steps_item">
                         <div class="steps_card">
-                            <p class="steps_card--title">3. Техническая реализация</p>
-                            <p class="steps_card--text">После утверждения дизайн-макета наступает следующий этап –
-                                верстка. Это трудоемкий процесс: программисты должны все
-                                тщательно прописать, чтобы не допустить технических ошибок.</p>
+                            <div>
+                                <p class="steps_card--title">3. Техническая реализация</p>
+                                <p class="steps_card--text">После утверждения дизайн-макета наступает следующий этап –
+                                    верстка. Это трудоемкий процесс: программисты должны все
+                                    тщательно прописать, чтобы не допустить технических ошибок.</p>
+                            </div>
                             <picture>
                                 <source srcset="./images/card_image_3@x1.png 1x, ./images/card_image_3@x2.png 2x "
                                     media="(min-width: 100px)">
@@ -289,10 +347,13 @@
                     </li>
                     <li class="steps_item">
                         <div class="steps_card">
-                            <p class="steps_card--title">4. Наполнение контентом</p>
-                            <p class="steps_card--text">Создание и публикация текстов, а также видео материала. Хороший
-                                контент и качественные фотографии привлекают больше
-                                посетителей и помогают клиенту лучше ознакомиться с ассортиментом.</p>
+                            <div>
+                                <p class="steps_card--title">4. Наполнение контентом</p>
+                                <p class="steps_card--text">Создание и публикация текстов, а также видео материала.
+                                    Хороший
+                                    контент и качественные фотографии привлекают больше
+                                    посетителей и помогают клиенту лучше ознакомиться с ассортиментом.</p>
+                            </div>
                             <picture>
                                 <source srcset="./images/card_image_4@x1.png 1x, ./images/card_image_4@x2.png 2x "
                                     media="(min-width: 100px)">
@@ -302,10 +363,14 @@
                     </li>
                     <li class="steps_item">
                         <div class="steps_card">
-                            <p class="steps_card--title">5. Тестирование</p>
-                            <p class="steps_card--text">Составление плана тестирования для определения ошибок. Проверка
-                                работы сайта и визуального восприятия для улучшения
-                                сайта. Также используются чек-листы для четкого определения ошибок и их устранения. </p>
+                            <div>
+                                <p class="steps_card--title">5. Тестирование</p>
+                                <p class="steps_card--text">Составление плана тестирования для определения ошибок.
+                                    Проверка
+                                    работы сайта и визуального восприятия для улучшения
+                                    сайта. Также используются чек-листы для четкого определения ошибок и их устранения.
+                                </p>
+                            </div>
                             <picture>
                                 <source srcset="./images/card_image_5@x1.png 1x, ./images/card_image_5@x2.png 2x "
                                     media="(min-width: 100px)">
@@ -317,15 +382,25 @@
             </div>
         </div>
         <div class="steps_controls">
-            <button class="steps_controls--left"><img loading="lazy" src="./images/steps_button_left.svg"
-                    alt="Image"></button>
-            <button class="steps_controls--right"><img loading="lazy" src="./images/steps_button_right.svg"
-                    alt="Image"></button>
+            <button class="steps_controls--left controlBtn"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="58" height="58" rx="14" stroke="#67AEFC" stroke-width="2" />
+                    <path d="M33 42L21 30L33 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button class="steps_controls--right controlBtn">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1.00012" width="58" height="58" rx="14" stroke="#67AEFC" stroke-width="2" />
+                    <path d="M26 42.0001L38 30.0001L26 18.0001" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
     </section>
     <section class="samples" id="portfolio">
         <div class="container">
-            <h2 class="samples_title">Примеры<br />
+            <h2 class="samples_title">Примеры
                 онлайн-магазинов</h2>
             <div class="samples_thumb">
                 <ul class="samples_list" style="transform: translateY(0);">
@@ -333,8 +408,11 @@
                         <a class="samples_link">
                             <picture>
                                 <source srcset="./images/samples/001@x1.jpg 1x, ./images/samples/001@x2.jpg 2x "
-                                    media="(min-width: 100px)" class="samples_image">
-                                <img loading="lazy" src="./images/sample.jpg" alt="image">
+                                    media="(min-width: 100px)">
+                                <source srcset="./images/samples/big_001@x1.jpg 1x, ./images/samples/big_001@x2.jpg 2x "
+                                    media="(min-width: 1024px)">
+
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
                             </picture>
                             <div class="samples_item--overflow">
                                 <p class="samples_item--overflowTitle">Онлайн-магазин</p>
@@ -345,35 +423,9 @@
                     <li class="samples_item">
                         <a class="samples_link">
                             <picture>
-                                <source srcset="./images/samples/002@x1.jpg 1x, ./images/samples/002@x2.jpg 2x "
-                                    media="(min-width: 100px)" class="samples_image">
-                                <img loading="lazy" src="./images/sample.jpg" alt="image">
-                            </picture>
-                            <div class="samples_item--overflow">
-                                <p class="samples_item--overflowTitle">Онлайн-магазин</p>
-                                <p class="samples_item--overflowText">для парикмахеров</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="samples_item">
-                        <a class="samples_link">
-                            <picture>
-                                <source srcset="./images/samples/003@x1.jpg 1x, ./images/samples/003@x2.jpg 2x "
-                                    media="(min-width: 100px)" class="samples_image">
-                                <img loading="lazy" src="./images/sample.jpg" alt="image">
-                            </picture>
-                            <div class="samples_item--overflow">
-                                <p class="samples_item--overflowTitle">Онлайн-магазин</p>
-                                <p class="samples_item--overflowText">для кондитеров</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="samples_item">
-                        <a class="samples_link">
-                            <picture>
                                 <source srcset="./images/samples/004@x1.jpg 1x, ./images/samples/004@x2.jpg 2x "
-                                    media="(min-width: 100px)" class="samples_image">
-                                <img loading="lazy" src="./images/sample.jpg" alt="image">
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
                             </picture>
                             <div class="samples_item--overflow">
                                 <p class="samples_item--overflowTitle">Онлайн-магазин</p>
@@ -384,9 +436,23 @@
                     <li class="samples_item">
                         <a class="samples_link">
                             <picture>
+                                <source srcset="./images/samples/002@x1.jpg 1x, ./images/samples/002@x2.jpg 2x "
+                                    media="(min-width: 100px)">
+
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
+                            </picture>
+                            <div class="samples_item--overflow">
+                                <p class="samples_item--overflowTitle">Онлайн-магазин</p>
+                                <p class="samples_item--overflowText">для парикмахеров</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="samples_item">
+                        <a class="samples_link">
+                            <picture>
                                 <source srcset="./images/samples/005@x1.jpg 1x, ./images/samples/005@x2.jpg 2x "
-                                    media="(min-width: 100px)" class="samples_image">
-                                <img loading="lazy" src="./images/sample.jpg" alt="image">
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
                             </picture>
                             <div class="samples_item--overflow">
                                 <p class="samples_item--overflowTitle">Онлайн-магазин</p>
@@ -397,9 +463,24 @@
                     <li class="samples_item">
                         <a class="samples_link">
                             <picture>
+                                <source srcset="./images/samples/003@x1.jpg 1x, ./images/samples/003@x2.jpg 2x "
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
+                            </picture>
+                            <div class="samples_item--overflow">
+                                <p class="samples_item--overflowTitle">Онлайн-магазин</p>
+                                <p class="samples_item--overflowText">для кондитеров</p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li class="samples_item">
+                        <a class="samples_link">
+                            <picture>
                                 <source srcset="./images/samples/006@x1.jpg 1x, ./images/samples/006@x2.jpg 2x "
-                                    media="(min-width: 100px)" class="samples_image">
-                                <img loading="lazy" src="./images/sample.jpg" alt="image">
+                                    media="(min-width: 100px)">
+                                <img loading="lazy" src="./images/sample.jpg" alt="image" class="samples_image">
                             </picture>
                             <div class="samples_item--overflow">
                                 <p class="samples_item--overflowTitle">Онлайн-магазин</p>
@@ -412,23 +493,54 @@
 
             </div>
             <div class="samples_controls">
-                <button class="samples_controls--left"><img loading="lazy" src="./images/steps_button_left.svg"
-                        alt="Image"></button>
-                <button class="samples_controls--right"><img loading="lazy" src="./images/steps_button_right.svg"
-                        alt="Image"></button>
+                <button class="samples_controls--left controlBtn"><svg width="60" height="60" viewBox="0 0 60 60"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="58" height="58" rx="14" stroke="#67AEFC" stroke-width="2" />
+                        <path d="M33 42L21 30L33 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+
+
+
+                <button class="samples_controls--right controlBtn"><svg width="60" height="60" viewBox="0 0 60 60"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1.00012" width="58" height="58" rx="14" stroke="#67AEFC" stroke-width="2" />
+                        <path d="M26 42.0001L38 30.0001L26 18.0001" stroke="black" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
     <section class="moreinfo">
         <div class="container">
-            <img loading="lazy" src="./images/moreinfo_buble.svg" class="moreinfo_buble
-    " alt="buble">
+
+            <picture>
+                <source srcset="./images/moreinfo_buble@x1.png 1x, ./images/moreinfo_buble@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="moreinfo_buble--blue">
+            </picture>
+            <picture>
+                <source srcset="./images/moreinfo_buble_grey@x1.png 1x, ./images/moreinfo_buble_grey@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="moreinfo_buble">
+            </picture>
+
+           
+
+
             <h2 class="moreinfo_title">Необходимо больше информации?</h2>
             <picture>
                 <source srcset="./images/moreinfo_main_image@x1.png 1x, ./images/moreinfo_main_image@x2.png 2x "
-                    media="(min-width: 100px)">
+                    media="(max-width: 1199px)">
+                <source srcset="./images/big_moreinfo_main_image@x1.png 1x, ./images/big_moreinfo_main_image@x2.png 2x "
+                    media="(min-width: 1200px)">
                 <img loading="lazy" src="./images/sample.jpg" alt="image" class="moreinfo_image">
             </picture>
+
+
 
             <p class="moreinfo_text">Если Вы владелец онлайн-магазина или только начинаете свой путь в электронной
                 коммерции и вам нужен уникальный дизайн онлайн магазина для стартапа, обратитесь к нашему веб дизайнеру.
@@ -449,58 +561,127 @@
             </form>
             <picture>
                 <source srcset="./images/request_image@x1.png 1x, ./images/request_image@x2.png 2x "
-                    media="(min-width: 100px)">
+                    media="(max-width: 1199px)">
+                <source srcset="./images/request_image_2@x1.png 1x, ./images/request_image_2@x2.png 2x "
+                    media="(min-width: 1200px)">
                 <img loading="lazy" src="./images/sample.jpg" alt="image" class="request_image">
+            </picture>
+            <picture>
+                <source srcset="./images/request_blanked@x1.png 1x, ./images/request_blanked@x1.png 2x "
+                    media="(min-width: 1200px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="request_image--blanket">
+            </picture>
+            <picture>
+                <source srcset="./images/moreinfo_buble_grey@x1.png 1x, ./images/moreinfo_buble_grey@x2.png 2x "
+                    media="(min-width: 100px)">
+                <img loading="lazy" src="./images/sample.jpg" alt="image" class="request_buble">
             </picture>
         </div>
     </section>
     <section class="footer" id="designers">
         <div class="container">
-            <a href="#"><img loading="lazy" src="./images/logo_footer.svg" alt="Image" class="footer_logo"></a>
-            <div class="footer_info">
+            <div class="mobile-view">
+                <a href="#"><img loading="lazy" src="./images/logo_footer.svg" alt="Image" class="footer_logo"></a>
+                <div class="footer_info">
+                    <ul class="footer_contacts--list">
+                        <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                    loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                    class="footer_contacts--link--logo">
+                                <p class="footer_contacts--text">Валерия
+                                    +38 099 000 11 22</p>
+                            </a></li>
+                        <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                    loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                    class="footer_contacts--link--logo">
+                                <p class="footer_contacts--text">Анна
+                                    +38 099 000 11 22</p>
+                            </a></li>
+                        <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
+                                    loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                    class="footer_contacts--link--logo">
+                                <p class="footer_contacts--text">Валерия
+                                    +38 099 000 11 22</p>
+                            </a></li>
+
+                    </ul>
+                    <ul class="footer_social--list">
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/fb.svg" alt="facebook"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/tg.svg" alt="telegram"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/viber.svg" alt="viber"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/whatsapp.svg" alt="watsapp"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/insta.svg" alt="instagram"
+                                    class="footer_social--link--logo"></a></li>
+                    </ul>
+                    <div class="footer_copyrights">
+                        <p class="footer_copyrights--email"><a href="mailto:hr@d-vs.com"
+                                class="footer_copyrights--email--link">hr@d-vs.com</a></p>
+                        <p class="footer_copyrights--info">Developers 2018-2021 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-view">
+                <div class="first-block"><a href="#"><img loading="lazy" src="./images/logo_footer.svg" alt="Image"
+                            class="footer_logo"></a>
+                    <ul class="footer_social--list">
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_fb.svg" alt="facebook"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_tg.svg" alt="telegram"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_viber.svg" alt="viber"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_whatsapp.svg" alt="watsapp"
+                                    class="footer_social--link--logo"></a></li>
+                        <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
+                                    loading="lazy" src="./images/pc_insta.svg" alt="instagram"
+                                    class="footer_social--link--logo"></a></li>
+                    </ul>
+                </div>
                 <ul class="footer_contacts--list">
                     <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
-                                loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                loading="lazy" src="./images/pc_whatsapp.svg" alt="Image"
                                 class="footer_contacts--link--logo">
                             <p class="footer_contacts--text">Валерия
                                 +38 099 000 11 22</p>
                         </a></li>
                     <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
-                                loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                loading="lazy" src="./images/pc_whatsapp.svg" alt="Image"
                                 class="footer_contacts--link--logo">
                             <p class="footer_contacts--text">Анна
                                 +38 099 000 11 22</p>
                         </a></li>
                     <li class="footer_contacts--item"><a href="tel:+380990001122" class="footer_contacts--link"><img
-                                loading="lazy" src="./images/viber_logo_1.svg" alt="Image"
+                                loading="lazy" src="./images/pc_whatsapp.svg" alt="Image"
                                 class="footer_contacts--link--logo">
                             <p class="footer_contacts--text">Валерия
                                 +38 099 000 11 22</p>
                         </a></li>
 
                 </ul>
-                <ul class="footer_social--list">
-                    <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
-                                loading="lazy" src="./images/fb.svg" alt="facebook"
-                                class="footer_social--link--logo"></a></li>
-                    <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
-                                loading="lazy" src="./images/tg.svg" alt="telegram"
-                                class="footer_social--link--logo"></a></li>
-                    <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
-                                loading="lazy" src="./images/viber.svg" alt="viber"
-                                class="footer_social--link--logo"></a></li>
-                    <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
-                                loading="lazy" src="./images/whatsapp.svg" alt="watsapp"
-                                class="footer_social--link--logo"></a></li>
-                    <li class="footer_social--item"><a href="" class="footer_social--link" target="blank"><img
-                                loading="lazy" src="./images/insta.svg" alt="instagram"
-                                class="footer_social--link--logo"></a></li>
-                </ul>
-                <div class="footer_copyrights">
+
+                <div class="footer_info">
+
                     <p class="footer_copyrights--email"><a href="mailto:hr@d-vs.com"
-                            class="footer_copyrights--email--link">hr@d-vs.com</a></p>
-                    <p class="footer_copyrights--info">Developers 2018-2021 All rights reserved</p>
+                            class="footer_copyrights--email--link">hr@d-vs.com</a>
+                    </p>
+
                 </div>
+            </div>
+            <div class="footer_copyrights">
+
+                <p class="footer_copyrights--info">Developers 2018-2021 All rights reserved</p>
             </div>
         </div>
     </section>

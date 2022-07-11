@@ -9,16 +9,26 @@ const stepsRightBtn = document.querySelector(".steps_controls--right");
 const samplesLeftBtn = document.querySelector(".samples_controls--left");
 const samplesRightBtn = document.querySelector(".samples_controls--right");
 
+const controlBtn = document.querySelectorAll(".controlBtn");
+
+// console.dir(controlBtn.children[0].children[1].attributes[1].value);
+
 const ulWithCards = document.querySelector(".steps_list");
 const saplesUlCards = document.querySelector(".samples_list");
 
 let animationIterationNumber = 1;
 let iterationPosition = 0;
-const stepsCardWidth = 371;
+let stepsCardWidth = 371;
+let display = window.innerWidth;
+console.log(display);
+
+if (display >= 1920) {
+  stepsCardWidth = 650;
+}
 
 let samplesIterationNumber = 1;
 let samplesIterationPosition = 0;
-const samplesCardWidth = 826;
+const samplesCardWidth = 345;
 
 function openInfo(e) {
   e.currentTarget.children[0].classList.toggle("is-hidden");
@@ -36,22 +46,16 @@ function slideRight() {
   ulWithCards;
   ulWithCards.classList.add("slide-right");
 
-  if (animationIterationNumber < ulWithCards.children.length) {
+  if (animationIterationNumber < 5 && display < 768) {
     ulWithCards.style.transform = `translateX(${
       iterationPosition - stepsCardWidth
     }px)`;
-    // ulWithCards.animate(
-    //   [
-    //     // keyframes
-    //     { transform: `translateX(${iterationPosition - stepsCardWidth}px)` },
-    //   ],
-    //   {
-    //     // timing options
-    //     duration: 500,
-    //     iterations: 1,
-    //     fill: "forwards",
-    //   }
-    // );
+    animationIterationNumber += 1;
+    iterationPosition -= stepsCardWidth;
+  } else if (animationIterationNumber < 4 && display >= 768) {
+    ulWithCards.style.transform = `translateX(${
+      iterationPosition - stepsCardWidth
+    }px)`;
     animationIterationNumber += 1;
     iterationPosition -= stepsCardWidth;
   }
@@ -64,18 +68,6 @@ function slideLeft() {
       iterationPosition + stepsCardWidth
     }px)`;
 
-    // ulWithCards.animate(
-    //   [
-    //     // keyframes
-    //     { transform: `translateX(${iterationPosition + stepsCardWidth}px)` },
-    //   ],
-    //   {
-    //     // timing options
-    //     duration: 500,
-    //     iterations: 1,
-    //     fill: "forwards",
-    //   }
-    // );
     animationIterationNumber -= 1;
     iterationPosition += stepsCardWidth;
   }
@@ -85,26 +77,10 @@ function slideLeft() {
 
 function samplesSlideRight() {
   if (samplesIterationNumber < 2) {
-    saplesUlCards.style.transform = `translateY(${
+    saplesUlCards.style.transform = `translateX(${
       samplesIterationPosition - samplesCardWidth
     }px)`;
 
-    // saplesUlCards.animate(
-    //   [
-    //     // keyframes
-    //     {
-    //       transform: `translateY(${
-    //         samplesIterationPosition - samplesCardWidth
-    //       }px)`,
-    //     },
-    //   ],
-    //   {
-    //     // timing options
-    //     duration: 500,
-    //     iterations: 1,
-    //     fill: "forwards",
-    //   }
-    // );
     samplesIterationNumber += 1;
     samplesIterationPosition -= samplesCardWidth;
   }
@@ -112,7 +88,7 @@ function samplesSlideRight() {
 
 function samplesSlideLeft() {
   if (samplesIterationNumber > 1) {
-    saplesUlCards.style.transform = `translateY(${
+    saplesUlCards.style.transform = `translateX(${
       samplesIterationPosition + samplesCardWidth
     }px)`;
     // saplesUlCards.animate(
@@ -140,6 +116,7 @@ function burgerMenuFunctionality() {
   mobileMenu.classList.toggle("translateY0");
   body.classList.toggle("noScroll");
 }
+function changeBtnColor() {}
 
 //------- Steps section controls
 stepsRightBtn.addEventListener("click", () => {
@@ -161,7 +138,20 @@ samplesLeftBtn.addEventListener("click", () => {
 });
 
 burgerBtn.addEventListener("click", burgerMenuFunctionality);
+
 mobileLink.forEach((link) => {
   link.addEventListener("click", burgerMenuFunctionality);
 });
-// mobileLink.addEventListener("click", burgerMenuFunctionality);
+
+controlBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.children[0].children[1].attributes[1].value = "white";
+    setTimeout(() => {
+      btn.children[0].children[1].attributes[1].value = "black";
+    }, 250);
+    btn.children[0].attributes[3].value = "#67AEFC";
+    setTimeout(() => {
+      btn.children[0].attributes[3].value = "none";
+    }, 250);
+  });
+});

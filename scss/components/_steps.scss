@@ -1,8 +1,13 @@
 .steps {
-    height: 925px;
+ 
     padding-top: 42px;
     padding-bottom: 45px;
     position: relative;
+    @media screen and (min-width: $pc) {
+        padding-top: 123px;
+            padding-bottom: 123px;
+            overflow: hidden;
+    }
 
     &_title {
         font-size: 23px;
@@ -10,6 +15,10 @@
         line-height: 1.5;
         margin-bottom: 11px;
         text-align: center;
+        @media screen and (min-width: $tablet) {margin-bottom: 25px;}
+        @media screen and (min-width: $pc) {
+            margin-bottom: 84px;
+        }
     }
 
     &_thumb {
@@ -19,6 +28,18 @@
         outline: 2px solid #67AEFC;
         border-radius: 15px;
         margin-bottom: 25px;
+        @media screen and (min-width: $tablet) {
+        width: 100%;
+        height: 615px;
+
+        }
+        @media screen and (min-width: $pc) {
+            outline: transparent;
+            border-radius: unset;   
+            width: 672px;
+            height: 389px;
+            overflow: visible;
+        }
 
 
     }
@@ -42,6 +63,20 @@
         font-size: 20px;
         font-weight: 800;
         text-align: center;
+        @media screen and (min-width: $pc) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+                width: 672px;
+                height: 389px;
+            outline: 2px solid #67AEFC;
+        border-radius: 15px;
+            margin-bottom: 25px;
+        padding: 60px;
+        padding-top: 85px;
+        padding-left: 70px;
+        padding-right: 33px;
+        padding-bottom: 63px;}
 
         &--title {
             font-weight: 800;
@@ -49,6 +84,9 @@
             line-height: 1.58;
             text-align: left;
             text-transform: uppercase;
+            @media screen and (min-width: $pc) {
+                margin-bottom: 21px;
+            }
         }
 
         &--text {
@@ -63,10 +101,12 @@
     }
 
     &_controls {
-        background-color: #ffffff;
+        background-color: transparent;
         display: flex;
         justify-content: center;
         gap: 107px;
+
+              
     }
 
 }
@@ -77,6 +117,19 @@
     height: 39px;
     top: 10px;
     left: -10px;
+    @media screen and (min-width: $pc) {
+        top: 129px;
+            left: 187px;
+    }
+}
+
+.steps_blanked {display: none;
+    @media screen and (min-width: $pc) {
+            display: block;
+            position: absolute;
+            bottom: 47px;
+            right: 186px;
+        }
 }
 
 .slide-right {

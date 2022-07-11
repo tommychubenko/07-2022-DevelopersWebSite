@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+      scroll-behavior: smooth;
 }
 
 body {
@@ -51,13 +51,22 @@ ul {
 
 
     @media screen and (min-width: $tablet) {
-        width: 768px;
+        width: 738px;
+        padding-left: 15px;
+            padding-right: 15px;
 
     }
 
     @media screen and (min-width: $pc) {
-        width: 1200px;
+        width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
+        // @media screen and (min-width: $bigpc) {
+        //     width: 1920px;
+        //     padding-left: 375px;
+        //     padding-right: 375px;
+        // }
 }
 
 .button_one {

@@ -3,18 +3,45 @@
     padding-top: 46px;
     padding-bottom: 150px;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+        padding: 50px 0;
+    }
+    @media screen and (min-width: $pc) {
+        padding-top: 101px;
+            padding-bottom: 79px;
+
+    }
 
     &_info {
         padding: 0 36px;
+        @media screen and (min-width: $tablet) {
+            padding: unset;
+        }
+
     }
 
     &_logo {
         margin-bottom: 26px;
+        @media screen and (min-width: $tablet) {
+            width: 180px;
+        }
+
+        @media screen and (min-width: $pc) {
+            margin-bottom: 34px;
+            width: unset;
+        }
     }
 
     &_contacts--list {
-
         margin-bottom: 60px;
+        @media screen and (min-width: $tablet) {
+            margin: unset;
+                margin-right: 50px;
+            }
+                         @media screen and (min-width: $pc) {
+                            margin: unset;
+                         }
+                      
     }
 
     &_contacts--item {
@@ -29,7 +56,17 @@
         font-size: 16px;
         line-height: 1.4;
 
+
+        @media screen and (min-width: $pc) {           
+                font-size: 20px;
+                line-height: 1.2;
+             
+            
+               
+        }
+
         &--logo {
+
             margin-right: 15px;
         }
     }
@@ -43,20 +80,35 @@
 
     &_social--item:not(:last-child) {
         margin-right: 25px;
+        @media screen and (min-width: $pc) {margin-right: 36px;}
     }
+    &_copyrights--email{
+        @media screen and (min-width: $tablet) {
+            font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: lowercase;
+                text-decoration: none;
+                         color: #FFFFFF;
+        }
 
-    &_copyrights {
+}
+    &_copyrights  {
         color: #ffffff;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.4;
-
         text-align: center;
+        @media screen and (min-width: $pc) {
+            font-size: 18px;
+            line-height: 1.75;
+         }
 
         &--email {
             text-align: left;
             margin-left: 36px;
             margin-bottom: 23px;
+            @media screen and (min-width: $tablet) {margin: unset;}
             &--link{
                 text-decoration: none;
                 color: inherit;
@@ -64,4 +116,31 @@
 
         }
     }
+}
+.mobile-view{
+    @media screen and (min-width: $tablet) {
+    display: none;}
+}
+
+.pc-view{
+    
+    @media screen and (min-width: $tablet) {
+            display: flex;
+            justify-content: space-around;
+            align-items:flex-start;
+            margin-bottom: 50px;           
+        }
+                @media screen and (min-width: $pc) {
+                    margin-bottom: 120px;
+                }
+
+}
+
+.first-block{
+    @media screen and (min-width: $tablet) {
+        margin-right: 50px;
+    }
+        @media screen and (min-width: $pc) {
+            margin-right: unset;
+        }
 }
