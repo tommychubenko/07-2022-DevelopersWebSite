@@ -11,8 +11,6 @@ const samplesRightBtn = document.querySelector(".samples_controls--right");
 
 const controlBtn = document.querySelectorAll(".controlBtn");
 
-// console.dir(controlBtn.children[0].children[1].attributes[1].value);
-
 const ulWithCards = document.querySelector(".steps_list");
 const saplesUlCards = document.querySelector(".samples_list");
 
@@ -20,10 +18,9 @@ let animationIterationNumber = 1;
 let iterationPosition = 0;
 let stepsCardWidth = 371;
 let display = window.innerWidth;
-console.log(display);
 
-if (display >= 1920) {
-  stepsCardWidth = 650;
+if (display >= 1200) {
+  stepsCardWidth = 600;
 }
 
 let samplesIterationNumber = 1;
@@ -42,6 +39,7 @@ servicesLink.forEach((link) => {
 });
 
 // ----- Steps btns functionality
+
 function slideRight() {
   ulWithCards;
   ulWithCards.classList.add("slide-right");
@@ -53,6 +51,12 @@ function slideRight() {
     animationIterationNumber += 1;
     iterationPosition -= stepsCardWidth;
   } else if (animationIterationNumber < 4 && display >= 768) {
+    ulWithCards.style.transform = `translateX(${
+      iterationPosition - stepsCardWidth
+    }px)`;
+    animationIterationNumber += 1;
+    iterationPosition -= stepsCardWidth;
+  } else if (animationIterationNumber < 5 && display >= 1200) {
     ulWithCards.style.transform = `translateX(${
       iterationPosition - stepsCardWidth
     }px)`;
@@ -91,22 +95,7 @@ function samplesSlideLeft() {
     saplesUlCards.style.transform = `translateX(${
       samplesIterationPosition + samplesCardWidth
     }px)`;
-    // saplesUlCards.animate(
-    //   [
-    //     // keyframes
-    //     {
-    //       transform: `translateY(${
-    //         samplesIterationPosition + samplesCardWidth
-    //       }px)`,
-    //     },
-    //   ],
-    //   {
-    //     // timing options
-    //     duration: 500,
-    //     iterations: 1,
-    //     fill: "forwards",
-    //   }
-    // );
+
     samplesIterationNumber -= 1;
     samplesIterationPosition += samplesCardWidth;
   }
