@@ -22,27 +22,31 @@
         right: 20px;
         height: 38px;
         width: 38px;
+
         @media screen and (min-width: $tablet) {
             height: 50px;
-                width: 50px;
+            width: 50px;
         }
+
         @media screen and (min-width: $pc) {
             top: -100px;
             right: 50px;
             height: 108px;
             width: 108px;
-        }        
-                @media screen and (min-width: 1920px) {
-                    right: 122px;
-                    top: -244px;
-                }
+        }
+
+        @media screen and (min-width: 1920px) {
+            right: 122px;
+            top: -244px;
+        }
     }
 
-    &_buble--blue{
+    &_buble--blue {
         display: none;
+
         @media screen and (min-width: $pc) {
             display: block;
-            position:absolute;
+            position: absolute;
             left: 153px;
             top: 150px;
 
@@ -66,19 +70,22 @@
 
     &_image {
         margin-bottom: 29px;
+
         @media screen and (min-width: $pc) {
             margin: unset;
             position: absolute;
             top: 137px;
             right: 0;
         }
-                @media screen and (min-width: 1500px) {
-right: 0;
-                }
-                @media screen and (min-width: 1940px) {
-                   
-                        right: 134px;
-                }
+
+        @media screen and (min-width: 1500px) {
+            right: 0;
+        }
+
+        @media screen and (min-width: 1940px) {
+
+            right: 134px;
+        }
     }
 
     &_text {
@@ -89,6 +96,7 @@ right: 0;
         word-wrap: break-word;
         color: #111111;
         margin-bottom: 20px;
+
         @media screen and (min-width: $tablet) {
             margin-bottom: 40px;
         }

@@ -2,9 +2,10 @@
     padding-top: 337px;
     padding-bottom: 51px;
     position: relative;
+
     @media screen and (min-width: 480px) {
-            padding-top: 470px;
-        }
+        padding-top: 470px;
+    }
 
     @media screen and (min-width: $tablet) {
         padding-top: 50px;
@@ -21,7 +22,7 @@
         left: 0;
         width: 100%;
         pointer-events: none;
-       
+
 
 
         @media screen and (min-width: $tablet) {
@@ -60,14 +61,13 @@
             @media screen and (min-width: $pc) {
                 top: 82px;
                 right: 0;
-                // right: 171px;
-                // right: -100px;
                 width: unset;
             }
-@media screen and (min-width: 1500px) {
-    right: 171px;
-}
-            
+
+            @media screen and (min-width: 1500px) {
+                right: 171px;
+            }
+
 
         }
 
@@ -107,9 +107,10 @@
                 top: 50px;
                 left: 239px;
             }
-                        @media screen and (min-width: 1920px) {
-                            top: 120px;
-                        }
+
+            @media screen and (min-width: 1920px) {
+                top: 120px;
+            }
 
         }
     }
