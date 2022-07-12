@@ -1724,6 +1724,10 @@ ul {
   }
 }
 
+.pc-view {
+  display: none;
+}
+
 @media screen and (min-width: 767.98px) {
   .pc-view {
     display: -webkit-box;
@@ -1753,6 +1757,16 @@ ul {
 @media screen and (min-width: 1199.98px) {
   .first-block {
     margin-right: unset;
+  }
+}
+
+.pc {
+  display: none;
+}
+
+@media screen and (min-width: 767.98px) {
+  .pc {
+    display: unset;
   }
 }
 

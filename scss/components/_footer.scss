@@ -99,6 +99,7 @@
         font-size: 14px;
         line-height: 1.4;
         text-align: center;
+       
         @media screen and (min-width: $pc) {
             font-size: 18px;
             line-height: 1.75;
@@ -123,7 +124,7 @@
 }
 
 .pc-view{
-    
+    display: none;
     @media screen and (min-width: $tablet) {
             display: flex;
             justify-content: space-around;
@@ -142,5 +143,12 @@
     }
         @media screen and (min-width: $pc) {
             margin-right: unset;
+        }
+}
+
+.pc{
+    display: none;
+    @media screen and (min-width: $tablet) {
+            display: unset
         }
 }
